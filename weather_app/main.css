@@ -1,0 +1,249 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #111;
+}
+
+.app{
+  width: 90%;
+  max-width: 50%;
+  background-image: url("./asset/night.jpeg");
+  background-position: center;
+  color: whitesmoke;
+  margin: 3% auto;
+  /* padding: 2% 2%; */
+  text-align: center;
+  border-radius: 15px;
+}
+
+.search{
+  width: 100%;
+  /* display: inline-block; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2% 2%;
+}
+
+.search input{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #666666;
+  padding: 2% 2%;
+  height: 5vh;
+  border-radius: 10px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 16px;
+  width: 35%;
+  /* visibility: hidden; */
+  position: absolute;
+  display: none;
+  transition: width 0.4s ease-in-out;
+}
+
+.search-box{
+  display: flex;
+}
+.search button{
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 3%;
+  /* put animation? */
+}
+
+.search span{
+  /* margin-right: auto; */
+  visibility: hidden;
+}
+
+.close{
+  display: none;
+}
+
+.error-msg{
+  text-align: left;
+  font-size: 14px;
+  margin-left: 3%;
+  margin-top: -2%;
+  padding-bottom: 1%;
+  display:none;
+  color: #111;
+}
+
+/* location */
+.app h1{
+  font-size: 3vw;
+}
+
+.location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.location .city-name{
+  margin-right: 1vw;
+  font-weight: 500;
+}
+
+/* main */
+.weather{
+  padding: 20px;
+  margin-bottom: 25%;
+  background: rgba(255, 255, 255, 0.8);
+  color: #111;
+}
+.weather-icon{
+  margin-top: 5%;
+  font-size: 10vw;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.info h2{
+  font-size: 3vw;
+}
+
+
+/* detail bawah */
+.detail{
+  background: rgba(255, 255, 255, 0.8);
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  margin-top: 10%;
+  border-radius: 0 0 15px 15px;
+  /* height: 10vh; */
+}
+
+.detail-col{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.detail-col span{
+  font-size: 4vw;
+}
+
+.humidity, .wind, .clouds{
+  font-size: 2vw;
+  margin-top: 10px;
+}
+
+.detail-col p{
+  font-size: 1.5vw;
+}
+
+/* sembunyiin */
+.weather, .detail{
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .app{
+    max-width: 80%;
+  }
+  .info h2{
+    font-size: 4vw;
+  }
+
+  .detail p{
+    font-size: 2vw;
+  }
+  .detail span{
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .app{
+    max-width: 90%;
+  }
+  .search button{
+    height: 40px;
+    width: 40px;
+  }
+  .info h2{
+    font-size: 5vw;
+  }
+
+  .detail p{
+    font-size: 3vw;
+  }
+  .detail span{
+    font-size: 6vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .app{
+    max-width: 100%;
+  }
+  .search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+    margin-left: auto;
+    /* margin-right: 3%; */
+    /* put animation? */
+    font-size: 16px;
+  }
+  .search input{
+    border: 0;
+    outline: 0;
+    /* padding: 2% 2%; */
+    height: 4vh;
+    border-radius: 5px;
+    margin-right: 16px;
+    font-size: 12px;
+    width: 60%;
+    /* visibility: hidden; */
+    position: absolute;
+    display: none;
+    transition: width 0.4s ease-in-out;
+  }
+  .search span{
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    visibility: hidden;
+    display: none;
+  }
+
+  .info h2{
+    font-size: 5vw;
+  }
+
+  .detail p{
+    font-size: 3vw;
+  }
+  .detail span{
+    font-size: 8vw;
+  }
+}
+
+
