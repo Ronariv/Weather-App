@@ -1,5 +1,6 @@
 # Weather-App
 The weather app built using HTML, CSS and Javascript
+
 With OpenWeatherMap API, the information for each city weather can be displayed
 
 To use the program
